@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="result.css">
+    <script src="api_handler.bundle.js" defer></script>
+    <script src="dom_handler.bundle.js" defer></script>
+    <script src="render_result.bundle.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e4cebd824.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="top">
+        <header>
+            <h3>Whisp</h3>
+            <div class="right">
+                <form id="search-form">
+                    <input id="search-box" type="text" autocomplete="off" placeholder="Enter a place">
+                </form>
+                <i class="fa fa-solid fa-gear"></i>
+            </div>
+        </header>
+    </div>
+    <div class="top-mid">
+        <h1 id="place-name"></h1>
+        <i class="fa fa-solid fa-cloud" id="weather-symbol"></i>
+    </div>
+    <div id="middle"></div>
+    <span id="circle-gradient"></span>
+    <div class="mid-bottom">
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+
+</html>
